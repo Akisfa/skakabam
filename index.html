@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>SkakaBam</title>
@@ -20,7 +19,6 @@
     height: 200px;
     border: 3px solid black;
     margin: auto;
-    background-color: blue;
 }
 #character{
     width: 20px;
@@ -63,11 +61,18 @@ body
 
 }
 h1 {text-align: center;}
-    </style>
+button {
+ width: 100px;
+ height: 100px;
 }
+
+    </style>
+
 </head>
 <body>
 	<h1>Skakabam</h1>
+	<a href="index.html">Skakabam</a> </br>
+	<a href="" onclick="validator()">Pong </a>
     <div class="game">
         <div id="character"></div>
         <div id="block"></div>
@@ -78,6 +83,9 @@ h1 {text-align: center;}
     <div class="d1">
 	<a href="https://www.instagram.com/dimitrovsky_privv/">Instagram</a> </br>
 	<p>Igra je napravljena uz programski jezik JavaScript </p>
+	<forms>
+		<button  onclick="jump()">Skok </button>
+	</forms>
     </div>
 </body>
 <script>
@@ -114,5 +122,10 @@ else if (hour > 12 && hour < 19) {
 }
 else {
     console.log("Dobro vece")
-}</script>
+
+}
+function validator() {
+	alert("Uskoro...");
+}
+</script>
 </html>
